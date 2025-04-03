@@ -9,3 +9,7 @@ medibot\Scripts\activate
 ```
 pip install -r requirements.txt
 ```
+### if you get issue with sentence_tranformer improt run this 
+```
+pip install --upgrade sentence-transformers
+```
