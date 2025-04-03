@@ -5,3 +5,7 @@
 python -m venv medibot
 medibot\Scripts\activate
 ```
+## install the dependencies after activating the env 
+```
+pip install -r requirements.txt
+```
