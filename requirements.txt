@@ -1,4 +1,3 @@
-sentence-transformers
 langchain 
 flask
 pypdf
@@ -11,4 +10,8 @@ langchain_experimental
 google-generativeai
 streamlit 
 faiss-cpu
+sentence-transformers==4.0.1
+huggingface_hub==0.30.1
+transformers==4.50.3
+langchain_community==0.3.20
 -e .
