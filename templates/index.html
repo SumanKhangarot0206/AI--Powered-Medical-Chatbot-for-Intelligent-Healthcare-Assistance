@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Medical Assistant</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; background-color: #f8f8f8; }
+        h1 { color: #2c3e50; }
+        .form-box { background: white; padding: 30px; border-radius: 10px; max-width: 600px; margin: auto; }
+        input[type="text"] { width: 100%; padding: 10px; margin-top: 10px; }
+        input[type="submit"] { margin-top: 20px; padding: 10px 20px; background-color: #27ae60; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .response-box { margin-top: 40px; background: #ecf0f1; padding: 20px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h1>🩺 AI Medical Assistant</h1>
+        <form method="post">
+            <label for="query">Ask your medical question:</label>
+            <input type="text" name="query" id="query" required value="{{ query if query else '' }}">
+            <input type="submit" value="Ask">
+        </form>
+
+        {% if response %}
+            <div class="response-box">
+                <h3>🧠 AI Response:</h3>
+                <p>{{ response }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
